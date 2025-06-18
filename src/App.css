@@ -4,6 +4,22 @@
   box-sizing: border-box;
 }
 
-.navbar {
-  
+.hero{
+  background-image: url(./assets/imgs/fashion-background.jpg);
+  background-position: 50% 25%;
+  background-size: cover;
+  height:95vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title{
+  font-weight:bold;
+  font-size:4rem;
+  color:white;
+  text-shadow:
+  1px 1px 2px black,
+  0 0 0.2em black;
 }

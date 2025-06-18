@@ -8,6 +8,18 @@ function App() {
   return (
     <>
       <Navbar />
+      <main>
+        <section class = "hero">
+            <p class = "hero-title">Something Inspirational</p>
+            <button>Explore Catelog</button>
+        </section>
+
+        <section class = "product-preview">
+          
+        </section>
+      </main>
+
+
     </>
   )
 }

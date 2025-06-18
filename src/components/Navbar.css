@@ -1,5 +1,20 @@
+:root{
+  --primary-color: #1E1E1E;
+  --secondary-color: #121212;
+  --highlight-color: #7289da;
+  --hover-color: #242428;
+  --primary-text-color: #F8F9FA;
+  --secondary-text-color:#4a4c51;
+  --primary-font: gg-sans, sans-serif;
+  --bold-font: gg-sans-bold, sans-serif;
+  --semibold-font: gg-sans-semibold, sans-serif;
+  --medium-font: gg-sans-medium, sans-serif;
+  --border-color: #495057;
+}
+
+
 .navbar{
-  background-color: gray;
+  background-color: var(--primary-color);
 }
 
 nav{
@@ -7,6 +22,7 @@ nav{
   justify-content: space-between;
   align-items: center;
   padding:8px;
+  color: var(--primary-text-color);
 }
 
 .navbar-logo{
@@ -22,4 +38,5 @@ ul{
 
 li{
   font-size:1.1rem;
+  cursor: pointer;
 }
