@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import Navbar from './components/Navbar.jsx'
+import ProductCard from './components/ProductCard.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,15 +10,19 @@ function App() {
     <>
       <Navbar />
       <main>
-        <section class = "hero">
-            <p class = "hero-title">Something Inspirational</p>
+        <section className = "hero">
+            <p className = "hero-title">Something Inspirational</p>
             <button>Explore Catelog</button>
         </section>
 
-        <section class = "product-preview">
+      
+
+        <section className = "product-preview">
           
         </section>
       </main>
+
+      
 
 
     </>
