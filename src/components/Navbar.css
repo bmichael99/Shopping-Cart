@@ -1,6 +1,7 @@
 :root{
   --primary-color: #1E1E1E;
   --secondary-color: #121212;
+  --lighter-primary-color: #2A2A2A;
   --highlight-color: #7289da;
   --hover-color: #242428;
   --primary-text-color: #F8F9FA;
@@ -42,5 +43,24 @@ li{
 }
 
 .cartCount{
-  
+
+}
+
+.cartNav{
+  border: 1px solid var(--border-color);
+  background-color: var(--lighter-primary-color);
+  border-radius:8px;
+  padding:8px 24px;
+  display:flex;
+  gap:16px;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle; /* Align with text baseline */
+}
+
+.cartNav svg{
+  width:20px;
+  height:20px;
+  fill: white;
+  vertical-align: middle; /* Align with text baseline */
 }
