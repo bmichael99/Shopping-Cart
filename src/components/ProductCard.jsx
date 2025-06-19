@@ -34,7 +34,7 @@ function ProductCard({title, price, img}) {
       setCart([...cart, item]);
     }
 
-    setQuantity(0);
+    setQuantity(1);
   }
 
   return(

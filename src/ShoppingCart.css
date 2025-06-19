@@ -1,0 +1,36 @@
+.cartList svg{
+  fill:white;
+  width:24px;
+  height:24px;
+}
+
+.cartList p{
+  display:flex;
+  gap:8px;
+  align-items: center;
+}
+
+.cartList button{
+  padding:4px;
+}
+
+.shoppingCart-container{
+  display:flex;
+  justify-content: center;
+  margin-top:16px;
+  padding:16px;
+}
+
+.cartList{
+  background-color: var(--primary-color);
+  max-width: 1200px;
+  min-width: 400px;
+  padding:32px;
+}
+h2{
+  text-align:center;
+}
+
+.bold{
+  font-weight:bold;
+}
