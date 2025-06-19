@@ -1,4 +1,14 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 .card-container{
   display: grid;
@@ -20,13 +30,37 @@
   object-fit: contain;
   width:250px;
   height:162.5px;
-  
 }
 
-.card-bottom{
+.card-middle{
   padding:8px;
   color:var(--primary-text-color);
   text-align: center;
+}
+.qty{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:4px;
+}
+
+.card-bottom{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:8px;
+}
+
+.addItemButton{
+  background-color: var(--highlight-color);
+  margin-bottom:8px;
+}
+
+.card-bottom input{
+  width:25px;
+  height:25px;
+  text-align:center;
 }
 
 .card-title{
@@ -35,5 +69,14 @@
 
 .card-container:hover{
   box-shadow: 2px 2px 10px rgb(129, 129, 129);
-  transform:translateY(-10px);
+  transform:scale(1.1);
+}
+
+.two-line-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2; /* For Firefox */
+  -webkit-box-orient: vertical;
 }
