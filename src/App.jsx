@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import Navbar from './components/Navbar.jsx'
 import ProductCard from './components/ProductCard.jsx'
+import { useOutletContext } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -21,10 +21,6 @@ function App() {
           
         </section>
       </main>
-
-      
-
-
     </>
   )
 }

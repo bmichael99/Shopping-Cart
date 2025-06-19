@@ -1,9 +1,13 @@
 import { useState } from 'react'
-import { Link } from "react-router-dom";
+import { Link, useOutletContext } from "react-router-dom";
 import './Navbar.css'
 
 function Navbar() {
-  const [count, setCount] = useState(0)
+  const { cart, setCart } = useOutletContext();
+
+  function cartCount(){
+    return 
+  }
 
   return (
     <>
@@ -16,7 +20,18 @@ function Navbar() {
             <ul>
               <li><Link to="/">Home</Link></li>
               <li><Link to="/shop">Shop</Link></li>
-              <li><Link>Cart</Link></li>
+              <li><Link to="/cart">Cart </Link>
+              <span className = "cartCount">
+              {
+              cart.reduce((accumulator, cartObj) => {
+              return cartObj.quantity + accumulator;
+              } ,0)
+              }
+              
+              </span>
+              
+              </li>
+              
             </ul>
           </div>
           <div className="navbar-right">

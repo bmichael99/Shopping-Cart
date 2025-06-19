@@ -2,6 +2,7 @@ import './ShoppingDirectory.css'
 import ProductCard from './components/ProductCard.jsx'
 import Navbar from './components/Navbar.jsx'
 import { useEffect, useState, useRef } from 'react'
+import { useOutletContext } from "react-router-dom";
 
 
 
@@ -17,7 +18,6 @@ function ShoppingDirectory(){
     }
 
     const productData = await Promise.all(requests);
-    console.log(productData);
     setProducts(productData);
   }
 
@@ -25,7 +25,7 @@ function ShoppingDirectory(){
 
   useEffect(() => {
     if (!hasFetched.current) {
-      callAPI(10);
+      callAPI(16);
       hasFetched.current = true;
     }
   }, [])
@@ -36,9 +36,9 @@ function ShoppingDirectory(){
 
   return(
     
-    <div classname = "shopping-body">
+    <div className = "shopping-body">
       <Navbar />
-      
+
       <div className="cards-container">
       {
         products.map((product) => 
